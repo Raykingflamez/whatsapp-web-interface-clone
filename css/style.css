@@ -1,0 +1,145 @@
+/* Default styles */
+body{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.clear-fix{
+    /* display: block; */
+    clear: both;
+}
+ 
+.chat-list , .chat-box{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* chat list styling */
+.chat-list{
+    width: 35%;
+    
+}
+
+.list-top .head-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    color: #fff;
+    background-color: rgb(47, 202, 150);
+    font-size: 1.2rem;
+    box-sizing: border-box;
+    padding: 3px;
+    padding-top: 40px;
+    padding-right: 50%;
+    text-align: center;
+}
+
+.head-bar a{
+   color: #fff;
+   padding-top: 4px ;
+   padding-bottom: 0;
+   width: 20%;
+}
+
+.head-bar span{
+    display: inline-block;
+    padding: 5px 10px;
+    white-space: nowrap;
+    width: 80%;
+}
+
+.list-top p{
+    padding: 0 15px;
+    border-right: 1px solid black;
+    width: 20%;
+    height: 20px;
+    color: skyblue;
+
+}
+
+
+.main-list{
+    overflow-y: scroll;
+    box-sizing: border-box;
+    margin-left: 10px;
+    
+}
+
+.main-list .group-icon{
+    background-color: rgb(47, 202, 150);
+    width: 30px;
+    padding: 5px;
+    margin-left: 10px;
+}
+.main-list h2{
+    font-size: 1.4rem;
+    padding-left: 10px;
+    padding-top: 18px;
+}
+
+.main-list img{
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    float: left;
+    clear: left;
+}
+
+.main-list h3{
+    padding: 12px;
+    padding-bottom: 1px ;
+}
+
+.main-list p{
+    margin-top: -14px;
+    width: 100%;
+    white-space: nowrap;
+    color: gray;
+
+}
+
+
+
+/* chat box styling */
+.chat-box{
+    width: 65%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: gray;
+
+}
+
+.chat-box p{
+    text-align: center;
+    width: 60%;
+    margin-top: 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(133, 131, 131, .3);
+}
+
+.chat-box h1{
+    font-size: 1.5rem;
+}
+
+.chat-box span{
+    font-size: 1rem;
+    margin: 20px;
+}
+
+.chat-box span a{
+    text-decoration: none;
+    color: rgb(47, 202, 150);
+}
